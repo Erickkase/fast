@@ -40,5 +40,8 @@ def get_movies(id: int):
     return []
 
 
+@app.get('/movies/', tags =['home'])
+def get_movies_by_category(category: str, year: int):
+    return year
 
 
